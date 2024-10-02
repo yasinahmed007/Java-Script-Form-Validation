@@ -1,0 +1,57 @@
+Lab5.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+
+        <label for="rePassword">Re-type Password:</label>
+        <input type="password" id="rePassword" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br>
+
+        <label>Programming Skills:</label>
+        <input type="checkbox" name="skills" value="Java"> Java
+        <input type="checkbox" name="skills" value="Android"> Android
+        <input type="checkbox" name="skills" value="Ruby"> Ruby
+        <input type="checkbox" name="skills" value=".net"> .net<br>
+
+        <label for="contactNo">Contact No:</label>
+        <input type="text" id="contactNo" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="college">College:</label>
+        <select id="college" required>
+            <option value="">Select College</option>
+            <option value="college1">NSU</option>
+            <option value="college2">IUB</option>
+        </select><br>
+
+        <input type="checkbox" id="rememberMe"> Remember Me<br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
